@@ -3,5 +3,6 @@ const { hasMany } = DS;
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  things: hasMany('thing', { polymorphic: true })
+  things: hasMany('thing', { polymorphic: true }),
+  specialThings: hasMany('thing', { polymorphic: true })
 });

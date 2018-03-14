@@ -6,4 +6,8 @@ Name: {{model.name}}
   <p>Thing: {{thing.title}}</p>
 {{/each}}
 
+{{#each model.specialThings as |thing|}}
+  <p>Special Thing: {{thing.title}}</p>
+{{/each}}
+
 {{outlet}}

@@ -9,4 +9,5 @@ export default function(server) {
 
   let user = server.create('user', { name: 'Ned' });
   user.createThing('picture', { title: 'lorem Ipsem' });
+  user.createSpecialThing('picture', { title: 'Special' });
 }
